@@ -4,7 +4,7 @@
 
   * Description:  从指定id的资讯之后获取5条最近资讯，不指定id或指定空字符串id则默认返回当前时间最近5条资讯
 
-  * URL：`GET /info/get-latest/`
+  * URL：`POST /info/get-latest/`
 
   * Request: 
 
@@ -86,5 +86,4 @@
     * `"Success", 200`
 
     * `"Insert Error" / "Bad Request", 400`
-
 
