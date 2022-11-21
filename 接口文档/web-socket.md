@@ -37,7 +37,7 @@ url：`/competition`
    * return form:
    ```json
    {
-       'problemID':1, // from 0 to n
+       'problemID':0, // from 0 to n
        'content': 'xxx', // description of the problem
        'type': 0, // 0 单选， 1/2大题
        'time': 30,// 单位：second
@@ -95,14 +95,14 @@ url：`/competition`
           ],
           "problems": [
               {
-                  "num": 1,
+                  "num": 0, // from 0 to n-1
                   "id": 12345,
                   "type": 0, // 题型可以作title，
                   //"title": "这是一道题目。预计在这里显示题型、正确率、平均分", 删去了title，因为数据库无title
                   "points": [[0], [10], [5], [6], [6], [3]],
               },
               {
-                  "num": 2,
+                  "num": 1,
                   "id": 12346,
                   "type":1, // 大题
                   "points": [[0,10,0,10,0], ...], // [[user1-p1, user2-p2, ...], [user2-p1, ...], ...]
