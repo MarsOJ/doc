@@ -52,6 +52,7 @@ url：`/competition`
 
 3. 发送答题结果(群发)
    * url:` /competition/answer`
+   * 注：如果为后端time out则不发送answer
    * return form:
    ```json
    {
@@ -63,10 +64,11 @@ url：`/competition`
 
 4. 下一道题（群发）
    * url: `/competition/next`
-   * 注：等三秒发送problem，若为
+   * 注：等三秒发送problem
 
    ```json
    {
+       'answer':[], // 上一道题的answer
        'lastQuestion':true/false,
    }
    ```
