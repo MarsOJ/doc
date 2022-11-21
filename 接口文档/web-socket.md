@@ -68,7 +68,7 @@ url：`/competition`
 
    ```json
    {
-       'answer':[], // 上一道题的answer
+       'answer':[], // 上一道题的answer，小题则为len为1的列表
        'lastQuestion':true/false,
    }
    ```
@@ -97,20 +97,15 @@ url：`/competition`
               {
                   "num": 1,
                   "id": 12345,
-                  "title": "这是一道题目。预计在这里显示题型、正确率、平均分",
-                  "points": [10, 5, 10, 10, 6, 3],
+                  "type": 0, // 题型可以作title，
+                  //"title": "这是一道题目。预计在这里显示题型、正确率、平均分", 删去了title，因为数据库无title
+                  "points": [[0], [10], [5], [6], [6], [3]],
               },
               {
                   "num": 2,
                   "id": 12346,
-                  "title": "这是一道题目",
-                  "points": [7, 10, 7, 10, 7, 10],
-              },
-              {
-                  "num": 3,
-                  "id": 12348,
-                  "title": "这是一道题目",
-                  "points": [0, 10, 0, 0, 5, 0],
+                  "type":1, // 大题
+                  "points": [[0,10,0,10,0], ...], // [[user1-p1, user2-p2, ...], [user2-p1, ...], ...]
               },
           ]
       }
