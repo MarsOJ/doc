@@ -16,9 +16,8 @@ url：`/competition`
 
 4. 接收一个答案
   * url: `/competition/finish`
-
   * params: problemID, answer
-  	* answer是一个list，内容是ABCD
+  * answer是一个list，内容是ABCD
 
 5. 确认最后一道题
   * url: `/competition/result`
@@ -44,7 +43,7 @@ url：`/competition`
        'time': 30,// 单位：second
        'subproblem': // 单选就一个元素，大题可能5-6个
        [{
-           'content':'',//题干
+           'content':'',//题干，如果为单选题则为空字符串
            'choice':['']//2或4个
    	},
        ],    
