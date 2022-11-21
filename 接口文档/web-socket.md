@@ -56,7 +56,7 @@ url：`/competition`
    ```json
    {
        'username':
-       'correct':true/false,
+       'correct': [true/false, true/false, ...],
        'score': //总分
    }
    ```
