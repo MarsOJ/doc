@@ -16,9 +16,8 @@ url：`/competition`
 
 4. 接收一个答案
   * url: `/competition/finish`
-
   * params: problemID, answer
-  	* answer是一个list，内容是ABCD
+  * answer是一个list，内容是ABCD
 
 5. 确认最后一道题
   * url: `/competition/result`
@@ -38,13 +37,13 @@ url：`/competition`
    * return form:
    ```json
    {
-       'problemID':1, // from 0 to n
+       'problemID':0, // from 0 to n
        'content': 'xxx', // description of the problem
        'type': 0, // 0 单选， 1/2大题
        'time': 30,// 单位：second
        'subproblem': // 单选就一个元素，大题可能5-6个
        [{
-           'content':'',//题干
+           'content':'',//题干，如果为单选题则为空字符串
            'choice':['']//2或4个
    	},
        ],    
@@ -53,21 +52,23 @@ url：`/competition`
 
 3. 发送答题结果(群发)
    * url:` /competition/answer`
+   * 注：如果为后端time out则不发送answer
    * return form:
    ```json
    {
        'username':
-       'correct':true/false,
+       'correct': [true/false, true/false, ...],
        'score': //总分
    }
    ```
 
 4. 下一道题（群发）
    * url: `/competition/next`
-   * 注：等三秒发送problem，若为
+   * 注：等三秒发送problem
 
    ```json
    {
+       'answer':[], // 上一道题的answer，小题则为len为1的列表
        'lastQuestion':true/false,
    }
    ```
@@ -94,22 +95,17 @@ url：`/competition`
           ],
           "problems": [
               {
-                  "num": 1,
+                  "num": 0, // from 0 to n-1
                   "id": 12345,
-                  "title": "这是一道题目。预计在这里显示题型、正确率、平均分",
-                  "points": [10, 5, 10, 10, 6, 3],
+                  "type": 0, // 题型可以作title，
+                  //"title": "这是一道题目。预计在这里显示题型、正确率、平均分", 删去了title，因为数据库无title
+                  "points": [[0], [10], [5], [6], [6], [3]],
               },
               {
-                  "num": 2,
+                  "num": 1,
                   "id": 12346,
-                  "title": "这是一道题目",
-                  "points": [7, 10, 7, 10, 7, 10],
-              },
-              {
-                  "num": 3,
-                  "id": 12348,
-                  "title": "这是一道题目",
-                  "points": [0, 10, 0, 0, 5, 0],
+                  "type":1, // 大题
+                  "points": [[0,10,0,10,0], ...], // [[user1-p1, user2-p2, ...], [user2-p1, ...], ...]
               },
           ]
       }
