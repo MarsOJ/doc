@@ -1,0 +1,149 @@
+## Favorite-related API Documentation
+
+### 题目
+
+* 缩略题目
+
+  * url: `/favorite/problem`
+
+  * param:`/?p=&itemPerPage=&id=`
+
+  * method: GET
+
+  * request
+
+    ```json
+    {
+       'page':,
+       'itemPerPage':,
+       'favoriteID':// if not exists -> default favorite
+    }
+    ```
+
+  * return
+
+    ```json
+    {
+        'favoriteContent':
+        {
+            'title':,//string
+            'id':,//string
+            'content': //20-30 characters
+            'type': //
+            'date':
+        },
+        {
+        }
+    }
+    ```
+
+* 题目移动
+
+  * method: PUT
+
+  * request
+
+    ```json
+    {
+        'sourceID':'',
+        'destID':'',
+        'problemID':[],
+        'delete': true/false,
+    }
+    ```
+
+* 题目删除
+
+  * method: DELETE
+
+  * request
+
+    ```json
+    {
+        'sourceID':'',
+        'problemID':[],
+    }
+    ```
+
+* 题目增加
+
+  * method: POST
+
+  * request
+
+    ```json
+    {
+        'destID':'',
+        'problemID':[],
+    }
+    ```
+
+
+
+### 收藏夹
+
+* 收藏夹增加
+
+  * url: `/favorite/list`
+  * method: POST
+  * request
+
+  ```json
+  {
+      'name':
+  }
+  ```
+
+  * return 200,400
+
+* 收藏夹删除
+
+  * method: DELETE
+
+  * request
+
+    ```json
+    {
+        'id':
+    }
+    ```
+
+* 收藏夹改名
+
+  * method: PUT
+
+  * request
+
+    ```json
+    {
+        'id':
+        'newName':
+    }
+    ```
+
+* 收藏夹查看
+
+  * method: GET
+
+  * return
+
+    ```json
+    [
+        {
+            'id':,
+            'name':,
+            'default':true/false,
+        }
+    ]
+    ```
+
+* 题目批量删除/添加
+
+  ```json
+  {
+      'favoriateID':'', //
+      'problemID':[]
+  }
+  ```
+
+  
