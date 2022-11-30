@@ -25,15 +25,17 @@
     ```json
     {
         'favoriteContent':
-        {
+        [
+          {
             'title':,//string
             'id':,//string
             'content': //20-30 characters
             'type': //
             'date':
-        },
-        {
-        }
+          },
+          {
+          }
+        ]
     }
     ```
 
@@ -137,13 +139,6 @@
     ]
     ```
 
-* 题目批量删除/添加
-
-  ```json
-  {
-      'favoriateID':'', //
-      'problemID':[]
-  }
   ```
 
   
