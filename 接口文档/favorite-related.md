@@ -23,8 +23,6 @@
   * return
 
     ```json
-    {
-        'favoriteContent':
         [
           {
             'title':,//string
@@ -36,7 +34,6 @@
           {
           }
         ]
-    }
     ```
 
 * 题目移动
