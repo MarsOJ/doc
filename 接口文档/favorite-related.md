@@ -64,7 +64,7 @@
   * return
 
   ```json
-   [success_num, notfound_num, failed_num], 400
+    [success_num, notfound_num, failed_num]
   ```
 
 * 题目增加
@@ -83,7 +83,7 @@
   * return
 
     ```json
-   [success_num, repeated_num, failed_num], 400
+   [success_num, repeated_num, failed_num]
     ```
 
 
