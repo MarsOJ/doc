@@ -7,18 +7,15 @@
   * url: `/favorite/problem`
 
   * param:`/?p=&itemPerPage=&id=`
-
-  * method: GET
-
-  * request
-
-    ```json
+   ```json
     {
-       'page':,
+       'p':,
        'itemPerPage':,
-       'favoriteID':// if not exists -> default favorite
+      //  'id':// if not exists -> default favorite
     }
     ```
+
+  * method: GET   
 
   * return
 
@@ -64,6 +61,12 @@
     }
     ```
 
+  * return
+
+  ```json
+   [success_num, notfound_num, failed_num], 400
+  ```
+
 * 题目增加
 
   * method: POST
@@ -75,6 +78,12 @@
         'destID':'',
         'problemID':[],
     }
+    ```
+
+  * return
+
+    ```json
+   [success_num, repeated_num, failed_num], 400
     ```
 
 
