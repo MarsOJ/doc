@@ -52,13 +52,22 @@
     
     ```
 
-* delete
+* delete（待修改，批量）
 
   * Description: 删除某条资讯
 
-  * URL：`DELETE /info/delete/<id>`
+  * URL：`DELETE /info/delete`
 
+  * Request:
+     
+     ```json
+     []//id
+     ```
+     
+     
+     
   * Return: 
+     
      * `"Success", 200`
      
      * `"Delete Error", 400`
@@ -68,7 +77,7 @@
 
   * Description: 新建一条资讯
 
-  * URL: `POST /info/delete/<id>`
+  * URL: `POST /info/insert`
 
   * Request:
 

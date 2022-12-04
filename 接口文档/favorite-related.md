@@ -48,7 +48,7 @@
         'sourceID':'',
         'destID':'',
         'problemID':[],
-        'delete': true/false,
+        'delete': true/false, //
     }
     ```
 

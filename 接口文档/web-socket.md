@@ -70,9 +70,10 @@ url：`/competition`
    {
        'answer':[], // 上一道题的answer，小题则为len为1的列表
        'lastQuestion':true/false,
+       'offline':true/false, // 对手是否掉线
    }
    ```
-
+   
 5. 断开连接(前端不用显式emit)
 
    * url: `/competition/disconnect`
