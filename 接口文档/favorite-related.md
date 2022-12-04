@@ -7,34 +7,30 @@
   * url: `/favorite/problem`
 
   * param:`/?p=&itemPerPage=&id=`
-
-  * method: GET
-
-  * request
-
-    ```json
+   ```json
     {
-       'page':,
+       'p':,
        'itemPerPage':,
-       'favoriteID':// if not exists -> default favorite
+      //  'id':// if not exists -> default favorite
     }
     ```
+
+  * method: GET   
 
   * return
 
     ```json
-    {
-        'favoriteContent':
-        {
+        [
+          {
             'title':,//string
             'id':,//string
             'content': //20-30 characters
             'type': //
             'date':
-        },
-        {
-        }
-    }
+          },
+          {
+          }
+        ]
     ```
 
 * 题目移动
@@ -65,6 +61,12 @@
     }
     ```
 
+  * return
+
+  ```json
+    [success_num, notfound_num, failed_num]
+  ```
+
 * 题目增加
 
   * method: POST
@@ -76,6 +78,12 @@
         'destID':'',
         'problemID':[],
     }
+    ```
+
+  * return
+
+    ```json
+   [success_num, repeated_num, failed_num]
     ```
 
 
@@ -137,13 +145,6 @@
     ]
     ```
 
-* 题目批量删除/添加
-
-  ```json
-  {
-      'favoriateID':'', //
-      'problemID':[]
-  }
   ```
 
   
