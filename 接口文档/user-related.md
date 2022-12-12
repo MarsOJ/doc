@@ -1,22 +1,46 @@
-1. 获取基本信息：用户名、总积分、参与场次、pk胜场次、胜率、答题次数、正确题数、正确率、等级、是否为管理员
+1. 获取基本信息：用户名、总积分、参与场次、pk胜场次、答题次数、正确题数、等级、是否为管理员、个人签名
+   * url: /account/info
+   * method: GET
+   * request:
+      ```json
+      {
+         'username':,
+         'credits':,
+         'totalCompetitionsNum':,
+         'victoriesNum':,
+         'totalAnswersNum':,
+         'correctAnswersNum':,
+         'authority': False,//是否为管理员
+         'slogan':'', //个人签名
+      }
+      ```
 
 2. 改密码(account-related.md)
 
    ```json
    {
-       'oldPassword':
+       'password':
        'newPassword':
    }
    ```
 
 3. 上传头像
+   * url: /account/profile
+   * method: POST
+   * request
+   ```json
+   {
+      'profile':''//base64
+   }
+   ```
 
 4. 获取头像
-
-   return url_str，200
+   * url: /account/profile
+   * method: GET
+   * return base64，200
 
 5. 修改签名
-
+   * url: /account/
    ```json
    {
        'signature':,
