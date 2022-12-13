@@ -18,6 +18,7 @@
 
 2. 改密码(account-related.md)
    * url: /account/change-password
+   * method: POST
    * request:
       ```json
       {
@@ -42,12 +43,14 @@
    * return base64，200
 
 5. 修改签名
-   * url: /account/
-   ```json
-   {
-       'signature':,
-   }
-   ```
+   * url: /account/signature
+   * method: POST
+   * request:
+      ```json
+      {
+         'signature':,
+      }
+      ```
 
 6. 周榜排行榜：top10 用户名、签名、本周比赛得分（冠军3分，亚军2分...）
 
