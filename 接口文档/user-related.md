@@ -1,3 +1,4 @@
+## user-related API
 1. 获取基本信息：用户名、总积分、参与场次、pk胜场次、答题次数、正确题数、等级、是否为管理员、个人签名
    * url: /account/info
    * method: GET
@@ -16,13 +17,14 @@
       ```
 
 2. 改密码(account-related.md)
-
-   ```json
-   {
-       'password':
-       'newPassword':
-   }
-   ```
+   * url: /account/change-password
+   * request:
+      ```json
+      {
+         'password':
+         'newPassword':
+      }
+      ```
 
 3. 上传头像
    * url: /account/profile
