@@ -13,6 +13,7 @@
          'correctAnswersNum':,
          'authority': False,//是否为管理员
          'slogan':'', //个人签名
+         'profile':'',
       }
       ```
 
