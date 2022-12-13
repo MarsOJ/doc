@@ -13,7 +13,7 @@
        'itemPerPage':,
       //  'id':// if not exists -> default favorite
     }
-    ```
+   ```
 
   * method: GET   
 
@@ -148,7 +148,5 @@
         }
     ]
     ```
-
-  ```
-
+  
   

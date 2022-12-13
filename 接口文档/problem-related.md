@@ -64,3 +64,31 @@
             'source': 'CSP-J',
             'difficultyInt':1,
         ```
+
+5. 缩略显示所有题目
+
+   * url: `GET /question/list`
+
+   * param:`/?p=&itemPerPage=`
+      ```json
+       {
+          'p':,
+          'itemPerPage':,
+       }
+      ```
+      
+   * return
+   
+       ```json
+           [
+             {
+               'title':,//string
+               'id':,//string
+               'content': //20-30 characters
+               'type': //
+               'date':
+             },
+             {
+             }
+           ]
+       ```
