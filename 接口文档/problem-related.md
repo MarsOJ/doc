@@ -92,3 +92,7 @@
              }
            ]
        ```
+
+管理员查询题目个数
+
+* url: `GET /question/count`

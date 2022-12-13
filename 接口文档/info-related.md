@@ -43,7 +43,7 @@
        'itemPerPage':,
       //  'id':// if not exists -> default favorite
     }
-    ```
+   ```
 
   * method: GET   
 
@@ -89,12 +89,12 @@
   * URL：`DELETE /info/delete`
 
   * Request:
-     
+    
      ```json
      'id':[]//id
      ```
   * return success_num, 200
-     
+  
 * update
   * Description: 更新某条资讯
 
@@ -108,7 +108,7 @@
         'content': '',
         'source' : '',
     }
-    ```
+  ```
 
   * Return:
 
@@ -140,3 +140,8 @@
 
     * `"Insert Error" / "Bad Request", 400`
 
+
+
+管理员查询info个数
+
+* url: `GET /info/count`
