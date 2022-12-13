@@ -79,7 +79,7 @@
     }
     ```
 
-* Return:
+  * Return:
 
     * `"Success", 200`
 
