@@ -47,6 +47,10 @@
         'delete': true/false, //
     }
     ```
+  * return
+    ```json
+      [success_num, failed_num]
+    ```
 
 * 题目删除
 
@@ -60,11 +64,14 @@
         'problemID':[],
     }
     ```
+  * return
+    ```json
+      [success_num, noexist_num, failed_num]
+    ```
 
   * return
-
   ```json
-    [success_num, notfound_num, failed_num]
+      [success_num, notfound_num, failed_num]
   ```
 
 * 题目增加
@@ -72,7 +79,6 @@
   * method: POST
 
   * request
-
     ```json
     {
         'destID':'',
@@ -81,9 +87,8 @@
     ```
 
   * return
-
     ```json
-   [success_num, repeated_num, failed_num]
+      [success_num, repeated_num, failed_num]
     ```
 
 
@@ -95,7 +100,6 @@
   * url: `/favorite/list`
   * method: POST
   * request
-
   ```json
   {
       'name':
