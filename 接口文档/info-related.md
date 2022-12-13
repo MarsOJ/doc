@@ -65,14 +65,26 @@
      ```
   * return success_num, 200
      
-     
-     
-  * Return: 
-     
-     * `"Success", 200`
-     
-     * `"Delete Error", 400`
-     
+* update
+  * Description: 更新某条资讯
+
+  * URL：`POST /info/update`
+
+  * Request:
+  ```json
+    {
+        'title' : '',
+        'content': '',
+        'source' : '',
+    }
+    ```
+
+* Return:
+
+    * `"Success", 200`
+
+    * `"Update Error" / "Bad Request", 400`
+
 
 * insert
 
