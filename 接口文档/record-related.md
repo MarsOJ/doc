@@ -1,4 +1,4 @@
-## user-related API
+## record-related API
 
 * 周榜排行榜：top10 用户名、签名、本周比赛得分（冠军3分，亚军2分...）
    * url: `/record/rank`
@@ -64,7 +64,8 @@
          }
       ]
 
-
+* 管理员下载对战记录
+  * url: `GET /record/download`
 
 * 管理员查询对战记录个数
   * url: `GET /record/count`
