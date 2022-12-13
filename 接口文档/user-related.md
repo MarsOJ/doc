@@ -89,5 +89,5 @@
    ```
 
 8. 管理员查询对战记录
-   * url: /record/personal
+   * url: /record/all
    * note: 其余同个人对战记录
