@@ -31,7 +31,37 @@
     ]
     ```
 
-  
+* List
+  * Description: 分页显示info，其中content显示前20个字符
+
+  * url: `GET /favorite/problem`
+
+  * param:`/?p=&itemPerPage=`
+   ```json
+    {
+       'p':,
+       'itemPerPage':,
+      //  'id':// if not exists -> default favorite
+    }
+    ```
+
+  * method: GET   
+
+  * return
+
+    ```json
+        [
+          {
+            'title':,//string
+            'id':,//string
+            'content': //20-30 characters
+            'source':
+            'date': '%Y-%m-%d'
+          },
+          {
+          }
+        ]
+    ```
 
 * details
 
