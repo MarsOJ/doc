@@ -52,7 +52,7 @@
     
     ```
 
-* delete（待修改，批量）
+* delete
 
   * Description: 删除某条资讯
 
@@ -61,7 +61,7 @@
   * Request:
      
      ```json
-     []//id
+     'id':[]//id
      ```
      
      
