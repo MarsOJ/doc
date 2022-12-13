@@ -6,7 +6,7 @@
       ```json
       {
          'username':,
-         'credits':,
+         'credit':,
          'totalCompetitionsNum':,
          'victoriesNum':,
          'totalAnswersNum':,
