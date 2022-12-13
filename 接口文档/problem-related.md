@@ -5,6 +5,7 @@
     * method: POST
     * request
         ```json
+        {
             'classification': 1,
             'content': '判断以下命题',
             'answer':['B','C', 'A'],
@@ -16,6 +17,7 @@
             ],
             'source': 'CSP-J',
             'difficultyInt':1,
+        }
         ```
 
 2. 删（批量）
@@ -23,7 +25,9 @@
     * method: DELETE
     * request
         ```json
+        {
             'problemID':[]
+        }
         ```
     * return: success_num, 200
 
@@ -32,6 +36,7 @@
     * method: POST
     * request:
         ```json
+        {
             'id': '123fgg',
             'content': '判断以下命题',
             'answer':['B','C', 'A'],
@@ -43,12 +48,14 @@
             ],
             'source': 'CSP-J',
             'difficultyInt':1,
+        }
         ```
 4. 查
     * url: `/question/details/<id>`
     * method: GET
     * return:
         ```json
+        {
             'id': '123fgg',
             'content': '判断以下命题',
             'answer':['B','C', 'A'],
@@ -63,6 +70,7 @@
             ],
             'source': 'CSP-J',
             'difficultyInt':1,
+        }
         ```
 
 5. 缩略显示所有题目
