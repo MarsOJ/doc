@@ -47,7 +47,6 @@
         {
            'p':,
            'itemPerPage':,
-          //  'id':// if not exists -> default favorite
         }
        ```
    * return:
@@ -62,3 +61,4 @@
             
          }
       ]
+      ```
