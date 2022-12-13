@@ -1,7 +1,7 @@
 ## problem-related API
 
 * 增
-    * url: /question/insert/
+    * url: `/question/insert/`
     * method: POST
     * request
         ```json
@@ -19,8 +19,8 @@
         ```
 
 2. 删（批量）
-    * url: /question/delete/
-    * method: delete
+    * url: `/question/delete/`
+    * method: DELETE
     * request
         ```json
             'problemID':[]
@@ -28,7 +28,7 @@
     * return: success_num, 200
 
 3. 改
-    * url: /question/update/
+    * url: `/question/update/`
     * method: POST
     * request:
         ```json
@@ -45,7 +45,7 @@
             'difficultyInt':1,
         ```
 4. 查
-    * url: /question/details/<id>
+    * url: `/question/details/<id>`
     * method: GET
     * return:
         ```json
