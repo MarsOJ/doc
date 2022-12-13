@@ -145,3 +145,13 @@
 管理员查询info个数
 
 * url: `GET /info/count`
+
+* return
+
+  ```json
+  {
+      'count':4,
+  }
+  ```
+
+  

@@ -67,3 +67,10 @@
 
 * 管理员查询对战记录个数
   * url: `GET /record/count`
+  * return
+
+      ```json
+      {
+          'count':4,
+      }
+      ```
