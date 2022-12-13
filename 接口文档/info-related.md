@@ -73,6 +73,7 @@
   * Request:
   ```json
     {
+        'id' : '',
         'title' : '',
         'content': '',
         'source' : '',
