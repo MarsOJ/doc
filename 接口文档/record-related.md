@@ -31,13 +31,14 @@
          {
             'id': 'xxx', // 对战记录的唯一id
             'rank':[],
+            'scores':[],
             'date':,
          },
          {
             
          }
       ]
-
+      ```
    
    
 * 管理员查询对战记录
@@ -47,7 +48,6 @@
         {
            'p':,
            'itemPerPage':,
-          //  'id':// if not exists -> default favorite
         }
        ```
    * return:
@@ -56,6 +56,7 @@
          {
             'id': 'xxx', // 对战记录的唯一id
             'rank':[],
+            'scores':[],
             'date':,
          },
          {
