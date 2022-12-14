@@ -32,7 +32,7 @@
             'id': 'xxx', // 对战记录的唯一id
             'rank':[],
             'scores':[],
-            'date':,
+            'date':,//%Y-%m-%d,%H:%M:%S
          },
          {
             
@@ -57,7 +57,7 @@
             'id': 'xxx', // 对战记录的唯一id
             'rank':[],
             'scores':[],
-            'date':,
+            'date':, //%Y-%m-%d,%H:%M:%S
          },
          {
             
