@@ -147,6 +147,7 @@
 * 获取头像
    * url: /account/profile
    * method: GET
+   * param: `/?username=`
    * return base64，200
 
 * 修改签名
