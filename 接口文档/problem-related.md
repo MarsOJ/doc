@@ -8,6 +8,7 @@
         {
             'classification': 1,
             'content': '判断以下命题',
+            'code':'```C++\n#include <cstdlib>\n...\n```'
             'answer':['B','C', 'A'],
             'explanation':'hk for .hk, us for .us, cn for .cn',
             'subproblem':[
@@ -39,6 +40,7 @@
         {
             'id': '123fgg',
             'content': '判断以下命题',
+            'code':'```C++\n#include <cstdlib>\n...\n```'
             'answer':['B','C', 'A'],
             'explanation':'hk for .hk, us for .us, cn for .cn',
             'subproblem':[
@@ -58,6 +60,7 @@
         {
             'id': '123fgg',
             'content': '判断以下命题',
+            'code':'```C++\n#include <cstdlib>\n...\n```'
             'answer':['B','C', 'A'],
             'owner':'xxx',
             'submit_date':'%Y-%m-%d',
