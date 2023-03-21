@@ -1,0 +1,4 @@
+[
+{"classification": 0, "content": "电子邮件到达时，如果并没有开机，那么邮件将（）。", "code": "", "answer": ["D"], "explanation": "电子邮件到达时，如果并没有开机，那么邮件将保存在服务商的E-mail服务器上。", "title": "C1728", "subproblem": [{"content": "", "choice": ["退回给发件人", "开机时对方重新发送", "该邮件丢失", "保存在服务商的E-mail服务器上"]}]},
+{"classification": 0, "content": "互联网上的服务都是基于一种协议，www服务基于（）协议。", "code": "", "answer": ["C"], "explanation": "互联网上的服务都是基于一种协议，www服务基于HTTP协议。", "title": "C1729", "subproblem": [{"content": "", "choice": ["POP3", "SMTP", "HTTP", "TELNET"]}]}
+]
